@@ -2,6 +2,7 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="hipchat.png">
+    <script src="script.js"></script>
 </head>
 
 
@@ -13,14 +14,19 @@
             
         </h1>
         <!--<button id="joinRoom" type="button">Join Room</button>-->
-        <input type="button" id="joinRoom" value="Back to Login">
+        <input type="button" id="joinRoom" value="Back to Login" onclick="redirect('joinRoom')">
         <!--<input type="image" id="joinRoom" src="img/Join Room - Button-1.png"/>-->
     </div>
 </header>
 
 
-<body>
-    <!--<p class="text textBox" style="size: 45px;">Come hangout with your friend on our live chat</p>-->
-    <textarea class="formRoom"></textarea>
+<body style="margin: 0px; padding: 0px;">
+    <p class="messageBox" style="size: 45px;">Bonjours je m'appel Jean rene</p>
+    <div class="messageDiv">
+        <form>
+            <input type="text" id="message" name="message" placeholder="Enter message*" class="messageInput">
+        </form>
+    </div>
+    <!--    <textarea class="formRoom"></textarea>  -->
 </body>
 </html>
