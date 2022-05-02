@@ -5,7 +5,7 @@
     <script src="script.js"></script>
 </head>
 
-
+<!--
 <header>
     <div class="titleLogo">
         <h1>
@@ -13,18 +13,24 @@
             <img rel="image" src="hipchat.png" class="image" alt="Logo icon">
             
         </h1>
-        <!--<button id="joinRoom" type="button">Join Room</button>-->
         <input type="button" id="joinRoom" value="Back to Login" onclick="redirect('joinRoom')">
-        <!--<input type="image" id="joinRoom" src="img/Join Room - Button-1.png"/>-->
     </div>
 </header>
-
+-->
+<header>
+    
+</header>
 
 <body style="margin: 0px; padding: 0px;">
-    <p class="messageBox" style="size: 45px;">Bonjours je m'appel Jean rene</p>
+    <div class="messageBox">
+        <input type="button" id="joinRoom" value="Back to Login" onclick="redirect('joinRoom')" style="top: 10px; right: 10px; color: white;">
+        <p id="messageBoxText" style="size: 45px;">Bonjours je m'appel Jean rene</p>
+    </div>
     <div class="messageDiv">
         <form>
+            <input type="image" id="emoji" src="img/emoji.png">
             <input type="text" id="message" name="message" placeholder="Enter message*" class="messageInput">
+            <input type="image" id="send" src="img/icons8-sent-64.png" alt="submit">
         </form>
     </div>
     <!--    <textarea class="formRoom"></textarea>  -->
