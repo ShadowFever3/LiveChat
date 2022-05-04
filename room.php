@@ -25,6 +25,9 @@
     <div class="messageBox">
         <input type="button" id="joinRoom" value="Back to Login" onclick="redirect('joinRoom')" style="top: 10px; right: 10px; color: white;">
         <p id="messageBoxText" style="size: 45px;">Bonjours je m'appel Jean rene</p>
+        <?php 
+        echo 'User Ip adress: ' . $_SERVER['REMOTE_ADDR'];
+        ?>
     </div>
     <div class="messageDiv">
         <form>
