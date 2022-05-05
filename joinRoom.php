@@ -19,10 +19,17 @@
     </div>
 </header>
 <body>
-    <form action=".php" >
+    <?php session_start(); ?>
+    <form method="post" action="room.php">
         <input type="text" id="userNameForm" name="userNameForm" placeholder="Username*" class="formRoom text"><br>
         <input type="text" id="roomIdForm" name="roomIdForm" placeholder="Room Id*" class="formRoom text"><br>
         <input type="button" value="Join Room" class="formRoom formButton text" onclick="redirect('room')"><br>
     </form>
+
+        <?php
+            $_SESSION['username'] = POST['userNameForm'];
+            $_SESSION['roomid'] = POST['roomIdForm'];
+        ?>
+
 </body>
 </html>
